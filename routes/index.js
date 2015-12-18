@@ -9,5 +9,8 @@ router.get('/', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'ContactMe' });
 });
+router.get('/face', function(req, res, next) {
+  res.render('face', { title: 'FaceDetection' });
+});
 
 module.exports = router;
