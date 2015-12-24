@@ -2,5 +2,6 @@ extends layout
 
 block content
   div.main
-    h1= title
-    p Welcome to #{title}
+    div.projectContent
+      div(style= "background-image:url(" +source + ")").project
+        p.textProject #{projet}

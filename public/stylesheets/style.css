@@ -43,15 +43,16 @@ li::after{
   content: "";
   width: 100%;
   height:0.5em;
-  background: #00FFBE;
+  border: #00FFBE solid 5px;
+  height:0;
   opacity:.7;
   z-index: -2;
   transition: all .4s;
 }
 li:hover::after {
   opacity:.4;
-  transform:translateX(-105%);
-  width: 25%;
+  transform:translateY(-50%);
+  height:100%;
   transition: all .4s;
 }
 .main{
@@ -59,4 +60,36 @@ li:hover::after {
   width: 80%;
   margin-top:50px ;
   margin-left: 10%;
+}
+.projectContent{
+  position: relative;
+  width:100%;
+  margin: auto;
+}
+.project{
+  position: relative;
+  width: 40%;
+  height: 100px;
+}
+.project::before{
+  z-index: 1;
+  content: "";
+  width: 99%;
+  height: 99%;
+  position: absolute;
+  top:5%;
+  left:5%;
+  border: #00FFBE solid 5px;
+  transition: all .4s;
+
+}
+.project:hover::before{
+  background:#00FFBE ;
+  top:0;
+  left:0;
+}
+.textProject{
+  z-index: 50;
+  font-size:2em;
+
 }
