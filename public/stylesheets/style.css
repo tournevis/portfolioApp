@@ -45,20 +45,32 @@ li::after{
   left: 15%;
   content: "";
   width: 100%;
+<<<<<<< HEAD
   height:0em;
   border-style: solid;
   border-width: 5px;
   border-color: #00FFBE;
+=======
+  height:0.5em;
+  border: #00FFBE solid 5px;
+  height:0;
+>>>>>>> 3f4332bff7de59be2d9ea04d3c3918a984258c7e
   opacity:.7;
   z-index: -2;
   transition: all .4s;
 }
 li:hover::after {
+<<<<<<< HEAD
   opacity:.6;
   transform:translateX(-10%);
   transform:translateY(-50%);
   width: 100%;
   height:1em;
+=======
+  opacity:.4;
+  transform:translateY(-50%);
+  height:100%;
+>>>>>>> 3f4332bff7de59be2d9ea04d3c3918a984258c7e
   transition: all .4s;
 }
 .main{
@@ -66,4 +78,41 @@ li:hover::after {
   width: 80%;
   margin-top:50px ;
   margin-left: 10%;
+}
+.projectContent{
+  position: relative;
+  width:100%;
+  margin: auto;
+}
+.project{
+  position: relative;
+  width: 50%;
+  height: 50%;
+  z-index: 2
+}
+.project::before{
+  z-index: -3;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:5%;
+  left:5%;
+  border: #00FFBE solid 5px;
+  transition: all .4s;
+
+}
+.project:hover::before{
+  background:#00FFBE ;
+  top:0;
+  left:0;
+  opacity: 0.5;
+  border: #00FFBE solid 0px;
+}
+.textProject{
+  padding-top: 5%;
+  padding-left: 8%;
+  z-index: 5;
+  font-size:2em;
+  color: #FFF;
 }
