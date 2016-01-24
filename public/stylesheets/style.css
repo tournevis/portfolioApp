@@ -6,9 +6,7 @@ body {
   padding :1px;
   overflow: hidden;
   font-family: "Gotham-Book";
-}
-h1{
-  font-family: "Baron";
+  font-size: 1em;
 }
 a {
   text-decoration:none;
@@ -36,9 +34,10 @@ ul{
   left: 10%;
   margin-top: 0;
   padding-top: 0;
+  padding-left: 0;
 }
 h1{
-  font-family: avenirBold;
+  font-family: "Baron";
   margin: 0;
   margin-left: 5%;
   margin-top: 20px;
@@ -69,31 +68,42 @@ li::after{
   transition: all .4s;
 }
 li:hover::after {
-
   opacity:.4;
   transform:translateY(-50%);
   height:100%;
-
   transition: all .4s;
 }
 /* COntent PART  */
 .main{
   position: relative;
   width: 80%;
-  margin-top:60px ;
+  margin-top:80px ;
   margin-left: 10%;
-}
-.projectContent{
-  position: relative;
-  width:100%;
-  margin: auto;
 }
 .project{
   position: relative;
-  width: 50%;
-  height: 50%;
+  float:left;
+  width:48%;
+  background-size: cover;
+  margin:auto;
   z-index: 2
 }
+.project:nth-child(2n){
+  margin-left: 4%;
+}
+@media screen and (max-width: 640px) {
+  .main{
+    width:85%;
+  }
+  .project{
+    float:none;
+    width:100%;
+  }
+  .project:nth-child(2n){
+    margin-left: 0%;
+  }
+}
+
 .project::before{
   z-index: -3;
   content: "";

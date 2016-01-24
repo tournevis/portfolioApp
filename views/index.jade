@@ -2,8 +2,9 @@ extends layout
 
 block content
   div.main
-    div.projectContent
+    each val, index in project
       div(style= "background-image:url(" +source + ")").project
         div.textProject
-          h1 #{project}
+          h2 #{projectName}
           p #{projectDescript}
+        

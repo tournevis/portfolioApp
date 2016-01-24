@@ -1,9 +1,15 @@
 var express = require('express');
 var router = express.Router();
-
+var project = require('../models/project.js');
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', source:'./images/prototypo.png' , project:'First project' , projectDescript :" Description factice du premier projet "});
+  res.render('index', {
+    title: 'Express',
+    project: [{title: 'John', age: 20}, {title: 'Mike', age: 30}],
+    source:'./images/prototypo.png',
+    projectName:'First project',
+    projectDescript :" Description factice du premier projet "
+  });
 });
 
 router.get('/project', function(req, res, next) {
