@@ -5,10 +5,11 @@ body {
   margin :-1px;
   padding :1px;
   overflow: hidden;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Gotham-Book";
 }
-
-
+h1{
+  font-family: "Baron";
+}
 a {
   text-decoration:none;
 }
@@ -16,12 +17,25 @@ a:hover{
   cursor: alias ;
 }
 /**** Header Part ****/
-.menu{
+.name{
   position:fixed;
-  width: 100%;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  top:20px;
+  right:10%;
+}
+.menu{
+  font-family: "GothamBold";
+
 }
 ul{
   list-style-type:none;
+  position:fixed;
+  top:20px;
+  left: 10%;
+  margin-top: 0;
+  padding-top: 0;
 }
 h1{
   margin: 0;
@@ -32,7 +46,9 @@ h1{
 li{
   position:relative;
   float: left;
-  margin-left: 30px;
+  margin-top: 0;
+  padding-top: 0;
+  margin-right: 30px;
   font-size: 1.4em;
   text-decoration: none;
 }
@@ -55,10 +71,11 @@ li:hover::after {
   height:100%;
   transition: all .4s;
 }
+/* COntent PART  */
 .main{
   position: relative;
   width: 80%;
-  margin-top:50px ;
+  margin-top:60px ;
   margin-left: 10%;
 }
 .projectContent{
