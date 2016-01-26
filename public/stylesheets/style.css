@@ -1,19 +1,27 @@
 
 body {
   position: relative;
-  color:#333;
+  color:white;
   margin :-1px;
   padding :1px;
   overflow: hidden;
   font-family: "Gotham-Book";
   font-size: 1em;
+//  background: url('../images/background.png');
+  background-size: cover;
+   color: Black
+}
+.headWarp{
+  position: relative;
+  height: 70px;
+  background: white;
 }
 a {
   text-decoration:none;
 }
-a:hover{
-  cursor: alias ;
-}
+a:hover{cursor: alias ;}
+a:visited { color: black} /* Liens visités */
+
 /**** Header Part ****/
 .name{
   position:fixed;
@@ -60,7 +68,8 @@ li::after{
   width: 100%;
 
   height:0.5em;
-  border: #00FFBE solid 5px;
+  border:rgba(80, 255, 174, 0.75) solid 5px;
+  background-color:rgba(80, 255, 174, 0.75) ;
   height:0;
 
   opacity:.7;
@@ -73,7 +82,7 @@ li:hover::after {
   height:100%;
   transition: all .4s;
 }
-/* COntent PART  */
+/*  PROJECT CARD   */
 .main{
   position: relative;
   width: 80%;
@@ -81,12 +90,19 @@ li:hover::after {
   margin-left: 10%;
 }
 .project{
-  position: relative;
   float:left;
   width:48%;
+  height:250px;
   background-size: cover;
   margin:auto;
-  z-index: 2
+  margin-top: 2%;
+  margin-bottom: 2%;
+  z-index: 2;
+  transition: all .4s;
+  background: -webkit-linear-gradient(160deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 60%);
+  background: -o-linear-gradient(160deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 60%);
+  background: linear-gradient(180deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 60%);
+   background-blend-mode: screen;
 }
 .project:nth-child(2n){
   margin-left: 4%;
@@ -104,29 +120,17 @@ li:hover::after {
   }
 }
 
-.project::before{
-  z-index: -3;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top:5%;
-  left:5%;
-  border: #00FFBE solid 5px;
-  transition: all .4s;
-
-}
-.project:hover::before{
-  background:#00FFBE ;
-  top:0;
-  left:0;
-  opacity: 0.5;
-  border: #00FFBE solid 0px;
-}
 .textProject{
   padding-top: 5%;
-  padding-left: 8%;
+  padding-left: 5%;
   z-index: 5;
-  font-size:2em;
   color: #FFF;
+}
+.textProject h2{
+    font-family: "gotham-bold";
+    margin: 0;
+}
+.textProject p{
+  font-family: "Gotham-Book";
+  margin-top: 10px;
 }

@@ -3,7 +3,7 @@ extends layout
 block content
   div.main
     each val, index in project
-      div(style= "background-image:url(" +source + ")").project
+      div(style= "background-image:url(" +source + "), linear-gradient(150deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 50%)").project
         div.textProject
           h2 #{projectName}
           p #{projectDescript}
