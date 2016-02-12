@@ -2,16 +2,18 @@ doctype html
 html
   head
     title= title
+
+    meta(name="viewport" content="initial-scale=1, maximum-scale=1")
     link(rel='stylesheet', href='/stylesheets/font.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-  h1.name arthur rOb
   div.menu
     ul
       li
         a(href='/') Home
       li
-        a(href='/project') Project 
+        a(href='/experiment') experiments
       li
         a(href='/contact')  Contact
+    h1.name arthur rOb
   block content
