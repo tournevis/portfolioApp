@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 var config = require('./config.js');
 var routes = require('./routes/index');
 var User = require('./models/users');
-var Proj = require('./models/projects')
+var Proj = require('./models/projects');
+var Exp = require('./models/experiments')
 
 var app = express();
 
@@ -49,24 +50,57 @@ app.post('/project',function(req,res){
   console.log("got a post \n");
   //console.log(req);
   User.findOne({
-    name: req.body.name,
-    //pass: r eq.body.pass
-  },function(err, proj) {
+    name: req.body.name
+  },function(err, user) {
     if (err) throw err;
-    if (!proj) {
+    if (!user) {
       res.json({ success: false, message: 'Authentication failed. User not found.' });
-    } else{
+    } else if(req.body.password == user.password ){
       var yeah = new Proj({
         title: req.body.title,
         content: req.body.content,
+        projectId: req.body.projectId,
+        color :req.body.color,
         url: req.body.url,
         imgPath: req.body.imgPath
       });
       yeah.save(function(err){
         if (err) throw err;
         console.log('Project Saved');
-        res.json({ success: true });
+        res.json({ success: true ,  message: 'Project Saved' , status : 200 });
       });
+    }else{
+      res.json({ success: false, message: 'Authentication failed. Wrong Password' });
+    }
+  });
+});
+app.post('/experiment',function(req,res){
+  console.log("got a post \n");
+  //console.log(req);
+  User.findOne({
+    name: req.body.name
+    //pass: req.body.pass
+  },function(err, user) {
+    if (err) throw err;
+    if (!user) {
+      res.json({ success: false, message: 'Authentication failed. User not found.' });
+    }
+    if(req.body.password == user.password ){
+      var yeah = new Exp({
+        title: req.body.title,
+        content: req.body.content,
+        projectId: req.body.projectId,
+        color :req.body.color,
+        url: req.body.url,
+        imgPath: req.body.imgPath
+      });
+      yeah.save(function(err){
+        if (err) throw err;
+        console.log('Experiment Saved');
+        res.json({ success: true ,  message: 'Exp Saved' , status : 200 });
+      });
+    }else{
+      res.json({ success: false, message: 'Authentication failed. Wrong Password' });
     }
   });
 });

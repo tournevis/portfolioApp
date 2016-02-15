@@ -9,6 +9,10 @@ body {
 // background: url('../images/background.png');
   background-size: cover;
    color:#222;
+
+}
+::-webkit-scrollbar {
+    display: none;
 }
 a {
   text-decoration:none;
@@ -22,9 +26,9 @@ a:visited { color:#222}
 .menu{
   z-index: 10;
   width: 100%;
-padding-left: 10%;
-padding-right:10%;
-box-sizing: border-box;
+  padding-left: 10%;
+  padding-right:10%;
+  box-sizing: border-box;
   position: fixed;
   height: 60px;
   background: rgba(255, 255, 255, 0.7);
@@ -40,6 +44,7 @@ ul{
 }
 .name{
   font-family: "Baron";
+
   width:200px;
   font-size: 2em;
   margin: 0;
@@ -79,7 +84,8 @@ li:hover::after {
 /*  PROJECT CARD   */
 .main{
   position: relative;
-  display: block;
+  display: inline-block;
+  width:80%;
   margin-top:80px ;
   margin-left: 10%;
 }
@@ -162,7 +168,6 @@ li:hover::after {
     margin-left: 0%;
   }
 }
-
 .textProject{
   padding-top: 5%;
   padding-left: 5%;
@@ -176,4 +181,50 @@ li:hover::after {
 .textProject p{
   font-family: "Gotham-Book";
   margin-top: 10px;
+}
+/****** PROJECT VIEW  *****/
+.projectHead{
+    position: relative;
+    width:100%;
+    height:4em;
+    display: inline-block;
+}
+.projectHead > h2{
+position:relative;
+float: left;
+  font-size: 1.8em;
+  color:#222;
+  font-family:"gothambold";
+
+}
+.projectHead > h2::after{
+  position: absolute;
+      top: 65%;
+  left: 15px;
+  width:90%;
+  content: "";
+  height:0.5em;
+  border:rgba(80, 255, 174, 0.95) solid 5px;
+  background-color:rgba(80, 255, 174, 0.95) ;
+  height:0;
+  z-index: -2;
+  opacity:.7;
+}
+.projectImg{
+    width:130%;
+    height:400px;
+    position:relative;
+    margin-left:-14%;
+    display:inline-block;
+    overflow:hidden;
+}
+
+.projectImg > img {
+    position:absolute;
+    top:50%;
+    min-height:100%;
+    display:block;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    min-width:100%;
 }

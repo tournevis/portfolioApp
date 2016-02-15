@@ -3,9 +3,9 @@ extends layout
 block content
   div.main
     each val, index in project
-      div(style= "background-image:url(" + source[index].src   + "), linear-gradient(150deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 50%)").project
-        a(href='/project/' + path[index].src )
+      div(style= "background-image:url(./" + val.imgPath + "), linear-gradient(150deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 50%); ").project
+        a(href='/project' + val.url )
           div.textProject
-            h2 #{projectName}
-            p #{projectDescript}
+            h2 #{val.title}
+            p #{val.content}
         
