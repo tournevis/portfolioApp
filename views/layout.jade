@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= title
+    title = title
 
     meta(name="viewport" content="initial-scale=1, maximum-scale=1")
     script(src='/scripts/projectView.js', type ='text/javascript')
@@ -16,5 +16,17 @@ html
         a(href='/experiment') Experiments
       li
         a(href='/contact')  Contact
+      
+    //input(type='search' placeholder ='Search').search 
     h1.name arthur rOb
   block content
+
+  div.footer
+    .footerLink
+      a(href='https://github.com/tournevis').git
+        img(src='/images/octocat.png').footerImg 
+      a(href='https://twitter.com/Arth_Rob').tw 
+        img(src='/images/twitter.png').footerImg 
+      a(href='http://codepen.io/Tournevis/').codep
+        img(src='/images/codepen.png').footerImg 
+    

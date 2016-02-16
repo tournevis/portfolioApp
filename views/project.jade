@@ -2,9 +2,16 @@ extends layout
 block content
   div.main
     div.projectImg
-      img(src= '/'+project.imgPath )
+      img(src= '/'+project.imgPath)
     div.projectView
       div.projectHead
         h2 #{project.title}
       p #{project.content}
-    
+      if project.video
+        .projectVideo
+      .projectGallery
+        img.gallery
+      if project.content2
+        div
+          p #{project.content2}
+      

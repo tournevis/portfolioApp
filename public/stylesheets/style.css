@@ -14,46 +14,45 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+/* Liens visités */
+
 a {
   text-decoration:none;
   color: #222;
 }
 a:hover{cursor: alias ;}
 a:visited { color:#222}
- /* Liens visités */
 
 /**** Header Part ****/
 .menu{
+  box-sizing: border-box;
+  position: relative;
   z-index: 10;
   width: 100%;
   padding-left: 10%;
   padding-right:10%;
-  box-sizing: border-box;
-  position: fixed;
+
   height: 60px;
   background: rgba(255, 255, 255, 0.7);
   font-family: "GothamBold";
 }
 ul{
   list-style-type:none;
-  top:20px;
-  left: 10%;
   margin-top: 0;
   padding-top: 0;
   padding-left: 0;
 }
 .name{
   font-family: "Baron";
-
   width:200px;
   font-size: 2em;
   margin: 0;
   float: right;
+  text-align: right;
 }
 li{
   position:relative;
   float: left;
-  margin-top: 15px;
   padding-top: 0;
   margin-right: 35px;
   font-size: 1.5em;
@@ -62,9 +61,9 @@ li{
 li::after{
   position: absolute;
   top: 60%;
-  left: 15%;
+  left: 10%;
   content: "";
-  width: 100%;
+  width: 90%;
 
   height:0.5em;
   border:rgba(80, 255, 174, 0.95) solid 5px;
@@ -81,19 +80,62 @@ li:hover::after {
   height:100%;
   transition: all .4s;
 }
+/*SEARCH  */
+input[type="search"]{
+    position: relative;
+  padding:0;
+  font-family:  "GothamBold";
+  -webkit-appearance: none;
+  font-size: 1.5em;
+  color: black;
+  opacity: 1;
+  border: none;
+  width: 150px;
+  transition: all .2s;
+}
+.search:focus {
+	border: none;
+	outline-width: 0;
+}
+.search::after{
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  content: "";
+  width: 90%;
+
+  height:0.5em;
+  border:rgba(80, 255, 174, 0.95) solid 5px;
+  background-color:rgba(80, 255, 174, 0.95) ;
+  height:0;
+
+  opacity:.7;
+  z-index: -2;
+  transition: all .4s;
+}
+input[type="search"]::-webkit-input-placeholder {
+   color: black;
+}
+
+input[type="search"]::-moz-placeholder { /* Firefox 18- */
+   color: black;
+}
+
+input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
+   color: black;
+}
 /*  PROJECT CARD   */
 .main{
   position: relative;
   display: inline-block;
   width:80%;
-  margin-top:80px ;
   margin-left: 10%;
 }
 .project{
   position: relative;
   z-index: 1;
   float:left;
-  width:42%;
+  width:48%;
   height:300px;
   margin:auto;
   margin-top: 4%;
@@ -106,6 +148,9 @@ li:hover::after {
   display: block;
   position: relative;
   height: 100%;
+}
+.project:nth-child(2n){
+  margin-left: 4%;
 }
 @media screen and (min-width: 640px) {
     .project::before{
@@ -134,9 +179,7 @@ li:hover::after {
     background:  rgba(80, 255, 174, .9 );
   }
 }
-.project:nth-child(2n){
-  margin-left: 8%;
-}
+
 @media screen and (max-width: 640px) {
   .menu{
     width: 100%;
@@ -227,4 +270,51 @@ float: left;
     left:50%;
     -webkit-transform: translate(-50%, -50%);
     min-width:100%;
+}
+/* EXPERIMENT */
+
+.exp{
+
+}
+.exp:nth-child(2n) {
+  background:#E5FBF7;
+}
+/* FOOTER */
+.footer{
+  position:relative;
+  display: inline-block;
+  width:100%;
+  margin: 0;
+  //background-color: #EEE;
+}
+.footerLink{
+  position:absolute;
+  top:50%;
+  min-height:100%;
+  display:block;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+    width:80%;
+
+}
+.footerImg {
+  position:relative;
+  float:left;
+  opacity: .6;
+  width:32px;
+  margin: 10px;
+  -webkit-filter: grayscale(100%);
+ -moz-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+ -o-filter: grayscale(100%);
+ filter: grayscale(100%);
+ transition: all .5s;
+}
+.footerImg:hover{
+  -webkit-filter: grayscale(0%);
+ -moz-filter: grayscale(0%);
+ -ms-filter: grayscale(0%);
+ -o-filter: grayscale(0%);
+ filter: grayscale(0%);
+
 }

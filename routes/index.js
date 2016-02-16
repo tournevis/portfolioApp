@@ -26,9 +26,12 @@ router.get('/', function(req, res, next) {
 
 router.get('/experiment', function(req, res, next) {
 //  res.render('experiment', { title: 'kisskissgame', proj: 'miaou', projectName:'First project',});
-  var resProject = Proj.find(function(err, proj) {
-      res.render('experiment', { title: 'kisskissgame', project: proj});
-      console.log(proj);
+  var resExp = Exp.find(function(err, expe) {
+      if(err) {
+          console.log(err);
+      }
+      res.render('experiment', { title: 'kisskissgame', experiment: expe});
+      console.log(expe);
   });
 
 });
@@ -56,6 +59,7 @@ router.use('/project', function(req, res, next){
       }
   });
 });
+/*
 router.use('/experiment', function(req, res, next){
   console.log(req.url);
   var resProject = Exp.findOne({
@@ -65,8 +69,8 @@ router.use('/experiment', function(req, res, next){
         console.log(err);
       }
       if(exp){
-        res.render('project', { title: 'kisskissgame', experiment: exp});
-        console.log(proj);
+        res.render('expview', { title: 'kisskissgame', experiment: exp});
+        console.log(exp);
       }else{
         var err = new Error('Not Found');
         err.status = 404;
@@ -77,6 +81,6 @@ router.use('/experiment', function(req, res, next){
       }
   });
 });
-
+*/
 module.exports = router;
 //https://github.com/midoam2003/alaskapacific.edu/trunk/wp-content/themes/core/fonts/gotham

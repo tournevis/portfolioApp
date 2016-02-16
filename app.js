@@ -76,10 +76,8 @@ app.post('/project',function(req,res){
 });
 app.post('/experiment',function(req,res){
   console.log("got a post \n");
-  //console.log(req);
   User.findOne({
     name: req.body.name
-    //pass: req.body.pass
   },function(err, user) {
     if (err) throw err;
     if (!user) {
@@ -92,7 +90,9 @@ app.post('/experiment',function(req,res){
         projectId: req.body.projectId,
         color :req.body.color,
         url: req.body.url,
-        imgPath: req.body.imgPath
+        imgPath: req.body.imgPath,
+        jsPath: String,
+        cssPath: String
       });
       yeah.save(function(err){
         if (err) throw err;
