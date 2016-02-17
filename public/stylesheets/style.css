@@ -9,7 +9,7 @@ body {
 // background: url('../images/background.png');
   background-size: cover;
    color:#222;
-
+ height: 100vh;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -218,8 +218,27 @@ input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
   color: #FFF;
 }
 .textProject h2{
+  position: relative;
+    display: inline;
     font-family: "gothambold";
-    margin: 0;
+    margin: auto;
+    text-align: center;
+    width:80%;
+    margin-top: 120px;
+}
+.textProject h2::after{
+
+    position: absolute;
+        top: 65%;
+    left: 15px;
+    width:90%;
+    content: "";
+    height:0.5em;
+    border:rgba(80, 255, 174, 0.95) solid 5px;
+    background-color:rgba(80, 255, 174, 0.95) ;
+    height:0;
+    z-index: -2;
+    opacity:.7;
 }
 .textProject p{
   font-family: "Gotham-Book";
@@ -253,6 +272,23 @@ float: left;
   z-index: -2;
   opacity:.7;
 }
+.projectVideo{
+  position:relative  ;
+  width:100%;
+  min-height: 300px;
+  height: 400px;
+  padding-top:10px ;
+  display:inline-block;
+}
+iframe{
+  position:absolute;
+  min-height:100%;
+  display:block;
+  left:50%;
+  -webkit-transform: translateX(-50%);
+  width:100%;
+  height: 100%;
+}
 .projectImg{
     width:130%;
     height:400px;
@@ -261,7 +297,6 @@ float: left;
     display:inline-block;
     overflow:hidden;
 }
-
 .projectImg > img {
     position:absolute;
     top:50%;
@@ -270,6 +305,11 @@ float: left;
     left:50%;
     -webkit-transform: translate(-50%, -50%);
     min-width:100%;
+}
+.gallery{
+  margin-top:40px;
+  width:100%;
+  height:auto;
 }
 /* EXPERIMENT */
 
@@ -283,8 +323,10 @@ float: left;
 .footer{
   position:relative;
   display: inline-block;
-  width:100%;
-  margin: 0;
+    margin: auto;
+  margin-top: 10px;
+    width:100%;
+
   //background-color: #EEE;
 }
 .footerLink{
@@ -293,8 +335,8 @@ float: left;
   min-height:100%;
   display:block;
   left:50%;
-  -webkit-transform: translate(-50%, -50%);
-    width:80%;
+  -webkit-transform: translate(-50%, 0%);
+
 
 }
 .footerImg {
@@ -316,5 +358,4 @@ float: left;
  -ms-filter: grayscale(0%);
  -o-filter: grayscale(0%);
  filter: grayscale(0%);
-
 }

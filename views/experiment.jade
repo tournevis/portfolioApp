@@ -5,8 +5,9 @@ block content
     each val, index in experiment
       div.exp
         div.textExp
-          h2 #{val.title}
-          p #{val.content}  
+          a(href= "./experiment" + val.url)
+            h2 #{val.title}
+            p #{val.content}  
         each val2, index2 in val.imgPath
             img(src = val2 )
         

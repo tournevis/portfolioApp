@@ -1,0 +1,12 @@
+{
+    "name" : "tournevis",
+    "password" : "pass",
+    "imgPath" :["/images/kisskissgame/kisskissgameNB.jpg","/images/kisskissgame/kisskissgame0.jpg","/images/kisskissgame/kisskissgame1.jpg" ],
+    "title": "KissKiss Game",
+    "content" : "L’exposition Solutions COP21 a invité Pixel Carré à présenter au Grand Palais le KISSKISS GAME. Présenté pour la première fois à Futur en Seine en 2014, cette installation ludique et interactive a été cette fois-ci développé pour inviter le public à retrouver le chemin éclairé menant à un écosystème équilibré. Le jeu mettait en lumière de façon amusante les actions individuelles et collectives à mener pour relever le défi climatique.",
+    "url": "/kisskissgame",
+    "color" : "#BADA55",
+    "projectId" : "1",
+    "videoUrl" :  "https://player.vimeo.com/video/117601684",
+    "links" : ["http://pixelcarre.fr/portfolio/cop21/"]
+}

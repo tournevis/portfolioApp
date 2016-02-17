@@ -33,10 +33,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-/*app.get('/setup', function(req, res) {
+app.get('/setup', function(req, res) {
   var nick = new User({
     name: 'tournevis',
-    password: 'C est le meme que le 1er du travail',
+    password: 'pass',
     admin: true
   });
   nick.save(function(err) {
@@ -44,25 +44,28 @@ app.use(express.static(path.join(__dirname, 'public')));
     console.log('User saved successfully');
     res.json({ success: true });
   });
-}); */
+});
 
 app.post('/project',function(req,res){
   console.log("got a post \n");
-  //console.log(req);
   User.findOne({
     name: req.body.name
   },function(err, user) {
     if (err) throw err;
     if (!user) {
       res.json({ success: false, message: 'Authentication failed. User not found.' });
-    } else if(req.body.password == user.password ){
+      return;
+    }
+    if(req.body.password == user.password ){
       var yeah = new Proj({
         title: req.body.title,
         content: req.body.content,
         projectId: req.body.projectId,
         color :req.body.color,
         url: req.body.url,
-        imgPath: req.body.imgPath
+        imgPath: req.body.imgPath,
+        links: req.body.links,
+        videoUrl: req.body.videoUrl
       });
       yeah.save(function(err){
         if (err) throw err;

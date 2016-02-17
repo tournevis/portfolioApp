@@ -1,0 +1,9 @@
+extends layout
+block content
+  div.main
+    div.exp
+      h2 #{experiment.title}
+      p #{experiment.content}  
+      each val, index in experiment.imgPath
+        img(src = val )
+        

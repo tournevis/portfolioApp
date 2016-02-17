@@ -2,16 +2,19 @@ extends layout
 block content
   div.main
     div.projectImg
-      img(src= '/'+project.imgPath)
+      img(src= project.imgPath[1])
     div.projectView
       div.projectHead
         h2 #{project.title}
       p #{project.content}
-      if project.video
+      if project.videoUrl
+        div.projectHead
+          h2 Video
         .projectVideo
-      .projectGallery
-        img.gallery
-      if project.content2
-        div
-          p #{project.content2}
-      
+          iframe( src=project.videoUrl frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen )
+      if project.imgPath.length > 2
+        div.projectHead
+          h2 Gallery
+        .projectGallery
+        each val, index in project.imgPath
+          img(src = val).gallery

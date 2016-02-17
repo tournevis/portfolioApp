@@ -7,5 +7,7 @@ module.exports = mongoose.model('projects', new Schema({
   projectId: Number,
   color : String,
   url: String,
-  imgPath: String
+  imgPath: [],
+  videoUrl: String,
+  links : []
 }));
