@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+/*
 app.get('/setup', function(req, res) {
   var nick = new User({
     name: 'tournevis',
@@ -45,7 +45,7 @@ app.get('/setup', function(req, res) {
     res.json({ success: true });
   });
 });
-
+*/
 app.post('/project',function(req,res){
   console.log("got a post \n");
   User.findOne({

@@ -1,7 +1,7 @@
 {
     "name" : "tournevis",
     "password" : "pass",
-    "imgPath" :["/images/kisskissgame/kisskissgameNB.jpg","/images/kisskissgame/kisskissgame0.jpg","/images/kisskissgame/kisskissgame1.jpg" ],
+    "imgPath" :["/images/kisskissgame/kisskissgameNB.jpg","/images/kisskissgame/kisskissgame0.jpg","/images/kisskissgame/kisskissgame1.jpg","/images/kisskissgame/kisskissgame2.jpg" ],
     "title": "KissKiss Game",
     "content" : "L’exposition Solutions COP21 a invité Pixel Carré à présenter au Grand Palais le KISSKISS GAME. Présenté pour la première fois à Futur en Seine en 2014, cette installation ludique et interactive a été cette fois-ci développé pour inviter le public à retrouver le chemin éclairé menant à un écosystème équilibré. Le jeu mettait en lumière de façon amusante les actions individuelles et collectives à mener pour relever le défi climatique.",
     "url": "/kisskissgame",
@@ -10,4 +10,33 @@
     "videoUrl" :  "https://player.vimeo.com/video/117601684",
     "links" : ["http://pixelcarre.fr/portfolio/cop21/"]
 }
+
+/* Stal */
+{
+    "name" : "tournevis",
+    "password" : "pass",
+    "imgPath" :["/images/stal/stalnb.jpg","/images/stal/stal0.jpg","/images/stal/stal1.jpg","/images/stal/stal2.jpg" ],
+    "title": "STAL",
+    "content" : "Premier clip vidéo 360° pour le groupe Stal. Réalisé durant ma période d'alternance chez les gaulois cette application propose à l'utilisateur de ce plonge dans un univers immersif et coloré à l'aide du casque Durovis Dive. Cette Application a été réalisé avec Unity3D et est disponible sur les plateformes Androidet Ios.",
+    "url": "/stal",
+    "color" : "#BADA55",
+    "projectId" : "2",
+    "videoUrl" :  "https://www.youtube.com/embed/SMa3JtcYdpU",
+    "links" : ["http://thecreatorsproject.vice.com/fr/blog/une-plongee-univers-minimaliste-stal","http://www.lemonde.fr/musiques/article/2014/10/13/mets-ton-casque-et-regarde-la-musique-en-3d_4505365_1654986.html"]
+}
+{
+    "name" : "tournevis",
+    "password" : "pass",
+    "imgPath" :["/images/tweetmecha/tweetmechanb.jpg","/images/tweetmecha/tweetmecha0.jpg","/images/tweetmecha/tweetmecha1.jpg","/images/tweetmecha/tweetmecha2.jpg" ,"/images/tweetmecha/tweetmecha2.jpg"],
+    "title": "TweetMecha",
+    "content" : "Sculputure mural réalisé en bois, metal et Arduino. Elle propose une vision enfantine du flux d'activité twitter. Ici, durant la crise de crimée on peut voir le nombre de tweets pour poutine et pour obama. Le but de cette data visualisation, est de regarder le monde qui nous entoure avec un air un peu plus enfantin qu'a l'habitude.",
+    "url": "/tweetmecha",
+    "color" : "#BADA55",
+    "projectId" : "3",
+    "videoUrl" :  "https://player.vimeo.com/video/92936385",
+    "links" : []
+}
+
+
+//https://vimeo.com/92936385
 // http://thecreatorsproject.vice.com/fr/blog/une-plongee-univers-minimaliste-stal
