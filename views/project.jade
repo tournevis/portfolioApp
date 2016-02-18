@@ -17,4 +17,5 @@ block content
           h2 Gallery
         .projectGallery
         each val, index in project.imgPath
-          img(src = val).gallery
+          if index > 0
+            img(src = val).gallery

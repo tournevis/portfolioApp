@@ -3,8 +3,8 @@ extends layout
 block content
   div.main
     each val, index in project
-      div(style= "background-image:url(./" + val.imgPath[0] + "), linear-gradient(150deg, rgba(200,200,200,0.3), rgba(0,0,0,0) 50%); ").project
+      div(style= "background-image:url(./" + val.imgPath[1] + "), linear-gradient(150deg, rgba(00,00,00,0.8), rgba(0,0,0,0) 80%);   " class = val.class ).project
         a(href='/project' + val.url )
-          div.textProject
-            h2 #{val.title}
+          div( class = val.class ).textProject
+            h2  #{val.title}
         

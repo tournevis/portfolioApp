@@ -8,7 +8,8 @@
     "color" : "#BADA55",
     "projectId" : "1",
     "videoUrl" :  "https://player.vimeo.com/video/117601684",
-    "links" : ["http://pixelcarre.fr/portfolio/cop21/"]
+    "links" : ["http://pixelcarre.fr/portfolio/cop21/"],
+    "class" : " install"
 }
 
 /* Stal */
@@ -22,7 +23,8 @@
     "color" : "#BADA55",
     "projectId" : "2",
     "videoUrl" :  "https://www.youtube.com/embed/SMa3JtcYdpU",
-    "links" : ["http://thecreatorsproject.vice.com/fr/blog/une-plongee-univers-minimaliste-stal","http://www.lemonde.fr/musiques/article/2014/10/13/mets-ton-casque-et-regarde-la-musique-en-3d_4505365_1654986.html"]
+    "links" : ["http://thecreatorsproject.vice.com/fr/blog/une-plongee-univers-minimaliste-stal","http://www.lemonde.fr/musiques/article/2014/10/13/mets-ton-casque-et-regarde-la-musique-en-3d_4505365_1654986.html"],
+    "class" : "app"
 }
 {
     "name" : "tournevis",
@@ -34,7 +36,8 @@
     "color" : "#BADA55",
     "projectId" : "3",
     "videoUrl" :  "https://player.vimeo.com/video/92936385",
-    "links" : []
+    "links" : [],
+    "class":"install"
 }
 
 

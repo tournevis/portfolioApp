@@ -9,5 +9,6 @@ module.exports = mongoose.model('projects', new Schema({
   url: String,
   imgPath: [],
   videoUrl: String,
+  class: String,
   links : []
 }));

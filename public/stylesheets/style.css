@@ -80,6 +80,15 @@ li:hover::after {
   height:100%;
   transition: all .4s;
 }
+li:nth-child(2)::after{
+  border: #FFE73B solid 5px;
+  background: #FFE73B;
+}
+/*
+li:nth-child(3)::after{
+  border: #FF2A2A solid 5px;
+  background: #FF2A2A;
+} */
 /*SEARCH  */
 input[type="search"]{
     position: relative;
@@ -141,7 +150,7 @@ input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
   margin-top: 4%;
   margin-bottom: 4%;
   background-size: cover;
-  background-blend-mode: screen;
+  background-blend-mode: overlay;
   transition: all .4s;
 }
 .project a{
@@ -178,6 +187,15 @@ input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
     border:solid 6px rgba(80, 255, 174, 1.0 );
     background:  rgba(80, 255, 174, .9 );
   }
+  /*
+  .install::before{
+    border-color:  #FFE73B;
+  }
+    .install:hover::before{
+    border:solid 6px #FFE73B;
+    background:   #FFE73B;
+    opacity:0.9;
+  }*/
 }
 
 @media screen and (max-width: 640px) {
@@ -227,7 +245,6 @@ input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
     margin-top: 120px;
 }
 .textProject h2::after{
-
     position: absolute;
         top: 65%;
     left: 15px;
@@ -240,11 +257,21 @@ input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
     z-index: -2;
     opacity:.7;
 }
+/*
+.install h2::after{
+  border: #FFE73B solid 5px;
+  background-color: #FFE73B ;
+}
+*/
 .textProject p{
   font-family: "Gotham-Book";
   margin-top: 10px;
 }
+
+
 /****** PROJECT VIEW  *****/
+
+
 .projectHead{
     position: relative;
     width:100%;
@@ -258,6 +285,9 @@ float: left;
   color:#222;
   font-family:"gothambold";
 
+}
+.projectView{
+  text-align: justify;
 }
 .projectHead > h2::after{
   position: absolute;
