@@ -12,13 +12,12 @@ var Proj = require('./models/projects');
 var Exp = require('./models/experiments')
 
 var app = express();
-
-var port = process.env.PORT || 80;
+var defaultPort = 3000 ;
+var port = process.env.PORT ;
 //DATABASE INIT
 mongoose.connect(config.database); // connect to database
 app.set('superSecret', config.secret); // secret variable
 
-console.log('Magic happens at http://localhost:' + port);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -145,3 +144,4 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+module.exports.defaultPort = defaultPort;

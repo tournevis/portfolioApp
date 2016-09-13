@@ -16,5 +16,8 @@ block content
         div.projectHead
           h2 Gallery
         .projectGallery
-        each val, index in project.imgPath
-          img(src = val).gallery
+        - for( var i = 1; i < (project.imgPath.length + 1) ; ++i ) {
+          img( src = project.imgPath[i] ).gallery
+        - }
+            
+        
