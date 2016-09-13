@@ -64,7 +64,8 @@ app.post('/project',function(req,res){
         url: req.body.url,
         imgPath: req.body.imgPath,
         links: req.body.links,
-        videoUrl: req.body.videoUrl
+        videoUrl: req.body.videoUrl,
+        class : req.body.class
       });
       yeah.save(function(err){
         if (err) throw err;
@@ -93,6 +94,7 @@ app.post('/experiment',function(req,res){
         color :req.body.color,
         url: req.body.url,
         imgPath: req.body.imgPath,
+          class : req.body.class,
         jsPath: String,
         cssPath: String
       });
