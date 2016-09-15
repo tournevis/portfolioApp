@@ -1,3 +1,19 @@
+/* RICOCHET */
+{
+    "name" : "tournevis",
+    "password" : "pass",
+    "imgPath" :["/images/ricochet/ricochetNB.jpg","/images/ricochet/ricochet0.jpg","/images/ricochet/ricochet1.jpg","/images/ricochet/ricochet2.jpg" ],
+    "title": "Ricochet",
+    "content" : "Projet de fin de diplome pour l'école des Gobelins. Ricochet est un dispositif interactif à destination des personnes sourdes et malentendantes, qui à pour but de plonger les utilisateurs dans un environement synéthyque. Le principe est de ouer sur les différents sens du corps humain afin de reproduire un univers musical et lyrique",
+    "url": "/ricochet",
+    "color" : "#BADA55",
+    "projectId" : "1",
+    "videoUrl" :  "udifined",
+    "links" : ["http://ricochet.fr"],
+    "class" : " install"
+}
+
+/* KISS KISS GAME */
 {
     "name" : "tournevis",
     "password" : "pass",
@@ -26,6 +42,7 @@
     "links" : ["http://thecreatorsproject.vice.com/fr/blog/une-plongee-univers-minimaliste-stal","http://www.lemonde.fr/musiques/article/2014/10/13/mets-ton-casque-et-regarde-la-musique-en-3d_4505365_1654986.html"],
     "class" : "app"
 }
+/* MECHA TWEET */
 {
     "name" : "tournevis",
     "password" : "pass",

@@ -1,11 +1,12 @@
 doctype html
 html
   head
-    title = title
+    title title
 
     meta(name="viewport" content="initial-scale=1, maximum-scale=1")
     link(rel='stylesheet', href='/stylesheets/font.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/responsive.css')
     
   body
   div.menu
@@ -16,8 +17,7 @@ html
         a(href='/experiment') Experiments
       li
         a(href='/contact')  Contact
-      
-    input(type='search' placeholder ='Search').search 
+    
     h1.name arthur rOb
   block content
 

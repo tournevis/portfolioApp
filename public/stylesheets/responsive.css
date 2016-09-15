@@ -1,0 +1,52 @@
+
+@media only screen and (max-width: 785px) {
+  body{
+    overflow-x: hidden;
+  }
+  .menu{
+    width: 100%;
+    position: fixed;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .cover{
+    margin-top: 130px;
+  }
+  h1.name{
+    content: "";
+    display: none;
+  }
+  h2{
+    position: relative;
+  }
+  h2::after{
+    content: "";
+    z-index: -2;
+    position: absolute;
+    bottom:3px;
+    left: 10px;
+    height: 8px;
+    width: 150px;
+    background: rgba(80, 255, 174, .8 );
+  }
+  li{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: inline;
+    margin-right: 300px;
+  }
+  .main{
+    width:85%;
+  }
+  .project{
+    float:none;
+    width:100%;
+  }
+  .project:nth-child(2n){
+    margin-left: 0%;
+  }
+  .bio h2{
+    overflow-x: hidden;
+    font-size: 1000%;
+  }
+}

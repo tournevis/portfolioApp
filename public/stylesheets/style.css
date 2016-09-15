@@ -80,15 +80,17 @@ li:hover::after {
   height:100%;
   transition: all .4s;
 }
-li:nth-child(2)::after{
+/*li:nth-child(2)::after{
   border: #FFE73B solid 5px;
   background: #FFE73B;
-}
+}*/
 /*
 li:nth-child(3)::after{
   border: #FF2A2A solid 5px;
   background: #FF2A2A;
 } */
+
+
 /*SEARCH  */
 input[type="search"]{
     position: relative;
@@ -133,6 +135,49 @@ input[type="search"]::-moz-placeholder { /* Firefox 18- */
 input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
    color: black;
 }
+
+/**** COVER BIO ****/
+
+
+.cover{
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+/*  background-image:url('../images/background.png');
+  background-size: cover;*/
+}
+.bio{
+  position: relative;
+  color: #222;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.bio h2{
+  font-family: GothamBold;
+  position: absolute;
+  right: auto;
+  top: -5%;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  opacity: 0.4;
+  font-size: 1500%;
+  color: rgba(80, 255, 174, 1 );
+}
+.bio h2::after{
+  display: none;
+}
+.bio p{
+  text-align: justify;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.bio span{
+  font-family: gothambold;
+  font-size:  1.1em
+}
 /*  PROJECT CARD   */
 .main{
   position: relative;
@@ -146,7 +191,6 @@ input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
   float:left;
   width:48%;
   height:300px;
-  margin:auto;
   margin-top: 4%;
   margin-bottom: 4%;
   background-size: cover;
@@ -155,12 +199,28 @@ input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
 }
 .project a{
   display: block;
-  position: relative;
+  position:relative;
   height: 100%;
 }
 .project:nth-child(2n){
-  margin-left: 4%;
+  margin-left:4%;
 }
+/*
+.contentProject{
+  position: relative;
+  z-index: 1;
+  float:right;
+  width:48%;
+  height:300px;
+  margin:auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.contentProject:nth-child(2n){
+  float:left;
+  margin-left: 4%;
+}*/
+
 @media screen and (min-width: 640px) {
     .project::before{
     content: "";
@@ -198,37 +258,7 @@ input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
   }*/
 }
 
-@media screen and (max-width: 640px) {
-  .menu{
-    width: 100%;
-  }
-  h1.name{
-    content: "";
-  }
-  h2{
-    position: relative;
-  }
-  h2::after{
-    content: "";
-    z-index: -2;
-    position: absolute;
-    bottom:3px;
-    left: 10px;
-    height: 8px;
-    width: 150px;
-    background: rgba(80, 255, 174, .8 );
-  }
-  .main{
-    width:85%;
-  }
-  .project{
-    float:none;
-    width:100%;
-  }
-  .project:nth-child(2n){
-    margin-left: 0%;
-  }
-}
+
 .textProject{
   padding-top: 5%;
   padding-left: 5%;
@@ -251,11 +281,11 @@ input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
     width:90%;
     content: "";
     height:0.5em;
-    border:rgba(80, 255, 174, 0.95) solid 5px;
-    background-color:rgba(80, 255, 174, 0.95) ;
+    border:rgba(80, 255, 174, 1) solid 5px;
+    background-color:rgba(80, 255, 174, 1) ;
     height:0;
     z-index: -2;
-    opacity:.7;
+    opacity:.9;
 }
 /*
 .install h2::after{

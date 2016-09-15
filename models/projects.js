@@ -3,6 +3,7 @@ var Schema = mongoose.Schema;
 
 module.exports = mongoose.model('projects', new Schema({
   title: String,
+  id: Number,
   content: String,
   projectId: Number,
   color : String,

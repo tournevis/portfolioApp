@@ -10,6 +10,7 @@ var routes = require('./routes/index');
 var User = require('./models/users');
 var Proj = require('./models/projects');
 var Exp = require('./models/experiments')
+var childProc = require('child_process');
 
 var app = express();
 var defaultPort = 3000 ;
@@ -94,7 +95,7 @@ app.post('/experiment',function(req,res){
         color :req.body.color,
         url: req.body.url,
         imgPath: req.body.imgPath,
-          class : req.body.class,
+        class : req.body.class,
         jsPath: String,
         cssPath: String
       });
@@ -131,6 +132,7 @@ if (app.get('env') === 'development') {
       error: err
     });
   });
+  childProc.exec('open -a "Google Chrome" http://localhost:' + defaultPort);
 }
 
 // production error handler
