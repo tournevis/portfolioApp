@@ -1,16 +1,19 @@
 
 @media only screen and (max-width: 785px) {
-  body{
+  .container{
     overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 0;
+    margin: 0;
+    padding-top: 140px;
   }
   .menu{
     width: 100%;
     position: fixed;
     height: auto;
+    padding-top: 8px;
     padding-bottom: 10px;
-  }
-  .cover{
-    margin-top: 130px;
   }
   h1.name{
     content: "";
@@ -19,7 +22,7 @@
   h2{
     position: relative;
   }
-  h2::after{
+  textProject > h2::after{
     content: "";
     z-index: -2;
     position: absolute;
@@ -36,7 +39,7 @@
     margin-right: 300px;
   }
   .main{
-    width:85%;
+    width:80%;
   }
   .project{
     float:none;
@@ -48,5 +51,15 @@
   .bio h2{
     overflow-x: hidden;
     font-size: 1000%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .bio h2{
+    font-size: 800%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .bio h2{
+    font-size: 600%;
   }
 }

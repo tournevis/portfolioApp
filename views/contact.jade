@@ -1,6 +1,23 @@
 extends layout
 
 block content
-  div.main
-    h1= title
-    p Welcome to #{title}
+  div.main.contactContainer
+    h1.contactH Contact Me
+    br
+    div.coord
+      h2 Arthur Robert
+      p 89 rue des Maraichers 
+      p 75020 Paris
+    div.coord
+      h2 Phone 
+      h4 06.43.03.04.42
+    div.coord
+      a
+        h2#Email Email
+
+        h4 arth.rob.contact[at]gmail.com
+    
+block script
+  script(src='/scripts/contact.js', type ='text/javascript')
+
+  

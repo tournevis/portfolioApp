@@ -221,7 +221,7 @@ input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
   margin-left: 4%;
 }*/
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 785px) {
     .project::before{
     content: "";
     display: block;
@@ -318,6 +318,7 @@ float: left;
 }
 .projectView{
   text-align: justify;
+  letter-spacing: 1px;
 }
 .projectHead > h2::after{
   position: absolute;
@@ -379,6 +380,38 @@ iframe{
 .exp:nth-child(2n) {
   background:#E5FBF7;
 }
+/* ANIM */
+
+#mySelf{
+  position: relative;
+  display:inline-block;
+  opacity: 0;
+
+}
+.animationStart{
+  animation: 3s ease 0s infinite slidein ;
+}
+
+@keyframes slidein {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  20%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  80%{
+    transform: translateY(0px);
+      opacity: 1;
+  }
+  to {
+    transform: translateY(20px);
+      opacity: 0;
+
+  }
+}
+
 /* FOOTER */
 .footer{
   position:relative;
@@ -418,4 +451,35 @@ iframe{
  -ms-filter: grayscale(0%);
  -o-filter: grayscale(0%);
  filter: grayscale(0%);
+}
+/* Contact */
+.contactH{
+  font-family: gothambold;
+  letter-spacing: 1px;
+}
+.contactContainer{
+  line-height: 17px;
+}
+.coord{
+  float: left;
+  margin-right: 10%;
+}
+#Email{
+  position:relative;
+  float: left;
+
+    color:#222;
+}
+#Email::after{
+  position: absolute;
+      top: 65%;
+  left: 15px;
+  width:90%;
+  content: "";
+  height:0.5em;
+  border:rgba(80, 255, 174, 0.95) solid 5px;
+  background-color:rgba(80, 255, 174, 0.95) ;
+  height:0;
+  z-index: -2;
+  opacity:.7;
 }

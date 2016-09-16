@@ -4,13 +4,15 @@ block content
   div.cover
     div.bio
       h2 Hello.
-      p.intro Je m'appelle Arthur Robert, on pourrait me définir comme un : #[span.mySelf #[strong Designer]]
+      p.intro Moi c'est Arthur Rob, et je me défini plutôt comme un : #[span#mySelf Designer Interactif]
       p Je sors de l'école des Gobelins, en section Conception Réalisation Multimédia, option Développement.
-      p Auparavant, j'ai étudié dans à la fac de Marne la vallée en Études Visuelle Multimédias, et Arts Numérique. Derrière ce nom à rallonge, on peut retrouver de l'histoire de l'art, de la philosophie, de l'analyse de l'image mais surtout du développement créatif et une touche de graphisme.
-      p Ici il faut que je rédige les trucs que j'aime le tout avec une pointe d'humour
+      p Auparavant, j'ai étudié dans à la fac de Marne la vallée en Études Visuelle Multimédias, et Arts Numérique. Durant mes années d'études j'ai enrichie ma culture artistique et développé des compétences dans plusieurs domaines différents comme le code, le grpahisme, l'installation etc...
+      //p Voilà les projets que j'ai réalisé au cours des 2 dernières années
   div.main
     each val, index in project
       div(style= "background-image:url(./" + val.imgPath[1] + "),  linear-gradient(150deg, rgb(204, 204, 204), rgba(0, 0, 0, 0) 50%);  " class = val.class ).project
         a(href='/project' + val.url )
           div( class = val.class ).textProject
             h2  #{val.title}
+block script
+  script(src='/scripts/projectView.js', type ='text/javascript')

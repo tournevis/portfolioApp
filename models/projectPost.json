@@ -8,11 +8,10 @@
     "url": "/ricochet",
     "color" : "#BADA55",
     "projectId" : "1",
-    "videoUrl" :  "udifined",
+    "videoUrl" :  "https://player.vimeo.com/video/178104153",
     "links" : ["http://ricochet.fr"],
     "class" : " install"
 }
-
 /* KISS KISS GAME */
 {
     "name" : "tournevis",
@@ -43,19 +42,19 @@
     "class" : "app"
 }
 /* MECHA TWEET */
-{
-    "name" : "tournevis",
-    "password" : "pass",
-    "imgPath" :["/images/tweetmecha/tweetmechanb.jpg","/images/tweetmecha/tweetmecha0.jpg","/images/tweetmecha/tweetmecha1.jpg","/images/tweetmecha/tweetmecha2.jpg" ,"/images/tweetmecha/tweetmecha2.jpg"],
-    "title": "TweetMecha",
-    "content" : "Sculputure mural réalisé en bois, metal et Arduino. Elle propose une vision enfantine du flux d'activité twitter. Ici, durant la crise de crimée on peut voir le nombre de tweets pour poutine et pour obama. Le but de cette data visualisation, est de regarder le monde qui nous entoure avec un air un peu plus enfantin qu'a l'habitude.",
-    "url": "/tweetmecha",
-    "color" : "#BADA55",
-    "projectId" : "3",
-    "videoUrl" :  "https://player.vimeo.com/video/92936385",
-    "links" : [],
-    "class":"install"
-}
+  {
+      "name" : "tournevis",
+      "password" : "pass",
+      "imgPath" :["/images/tweetmecha/tweetmechanb.jpg","/images/tweetmecha/tweetmecha0.jpg","/images/tweetmecha/tweetmecha1.jpg","/images/tweetmecha/tweetmecha2.jpg" ,"/images/tweetmecha/tweetmecha2.jpg"],
+      "title": "TweetMecha",
+      "content" : "Sculputure mural réalisé en bois, metal et Arduino. Elle propose une vision enfantine du flux d'activité twitter. Ici, durant la crise de crimée on peut voir le nombre de tweets pour poutine et pour obama. Le but de cette data visualisation, est de regarder le monde qui nous entoure avec un air un peu plus enfantin qu'a l'habitude.",
+      "url": "/tweetmecha",
+      "color" : "#BADA55",
+      "projectId" : "3",
+      "videoUrl" :  "https://player.vimeo.com/video/92936385",
+      "links" : [],
+      "class":"install"
+  }
 
 
 //https://vimeo.com/92936385
