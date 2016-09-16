@@ -1,5 +1,6 @@
 var count = 0;
-var miaou = ["Designer Interactif", "Maker" , "Boloss" ,  " Pote " , "Creative Dev" , " Enfant ",];
+//var miaou = ["Designer Interactif", "Maker" , "Boloss" ,  " Pote " , "Creative Dev" , " Enfant "];
+var miaou = ["Designer Interactif", "Maker", "Creative Dev" ]
 console.log(miaou[0]);
 
 function changeMe(){
@@ -7,7 +8,7 @@ function changeMe(){
     count++;
     var temp = miaou[count%miaou.length];
     moi.innerHTML = temp;
-    console.log(temp);
+    //console.log(temp);
 }
 window.onload = function() {
   console.log("yo");

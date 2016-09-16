@@ -1,3 +1,17 @@
+/* transparency */
+{
+    "name" : "tournevis",
+    "password" : "azerty",
+    "imgPath" :["/images/transparency/transparencyNB.jpg","/images/transparency/transparency0.jpg","/images/transparency/transparency1.jpg","/images/transparency/transparency2.jpg" ],
+    "title": "Transparency",
+    "content" : "L’installation aérienne et audio-réactive TRANSPARENCY a été réalisée pour les soirées Yellow Lounge organisées par Universal Music Classics.",
+    "url": "/transparency",
+    "color" : "#BADA55",
+    "projectId" : "1",
+    "videoUrl" :  "https://player.vimeo.com/video/68902816",
+    "links" : ["http://pixelcarre.fr/portfolio/transparency/"],
+    "class" : " install"
+}
 /* RICOCHET */
 {
     "name" : "tournevis",
