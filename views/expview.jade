@@ -2,8 +2,9 @@ extends layout
 block content
   div.main
     div.exp
-      h2 #{experiment.title}
-      p #{experiment.content}  
-      each val, index in experiment.imgPath
-        img(src = val )
+      h2.expTitleView #{experiment.title}
+      p.expContentView #{experiment.content}  
+      - for( var i = 1; i < (experiment.imgPath.length + 1) ; ++i ) {
+        img( src = experiment.imgPath[i] ).expGallery  
+      - }
         

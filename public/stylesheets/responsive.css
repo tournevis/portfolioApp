@@ -8,6 +8,7 @@
     margin: 0;
     padding-top: 140px;
   }
+
   .menu{
     width: 100%;
     position: fixed;
@@ -52,6 +53,19 @@
     overflow-x: hidden;
     font-size: 1000%;
   }
+  .expPic {
+    width: 100%;
+  }
+  .expTitle{
+    font-size: 500%;
+    top:0;
+    right:0;
+    left:50%;
+    display: inline-block;
+    transform-origin: 50% 50%;
+    transform: translate(-50%,50%);
+
+  }
 }
 @media only screen and (max-width: 450px) {
   .bio h2{
@@ -61,5 +75,41 @@
 @media only screen and (max-width: 350px) {
   .bio h2{
     font-size: 600%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .bio {
+    width:70%;
+    margin-left: 15%;
+  }
+  .main{
+    width:70%;
+    margin-left: 15%;
+  }
+  .menu{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .projectImg{
+        width: 170%;
+            margin-left: -34%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .bio {
+    width:60%;
+    margin-left: 20%;
+  }
+  .main{
+    width:60%;
+    margin-left: 20%;
+  }
+  .menu{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .projectImg{
+        width: 170%;
+            margin-left: -34%;
   }
 }

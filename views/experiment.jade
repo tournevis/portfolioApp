@@ -1,14 +1,12 @@
 extends layout
 block content
   div.main
-    h2 Coming Soon ! ! !
     each val, index in experiment
-      div.exp
+      div.exp.expPrev
         div.textExp
           a(href= "./experiment" + val.url)
-            h2 #{val.title}
-            p #{val.content}  
-        each val2, index2 in val.imgPath
-            img(src = val2 )
+            h2.expTitle #{val.title}
+            img(src = val.imgPath[1]).expPic 
+      
         
         

@@ -12,7 +12,7 @@ body {
  height: 100vh;
 }
 ::-webkit-scrollbar {
-    display: none;
+  //  display: none;
 }
 /* Liens visités */
 
@@ -378,12 +378,7 @@ transform: translate(-50%, -50%);
 }
 /* EXPERIMENT */
 
-.exp{
 
-}
-.exp:nth-child(2n) {
-  background:#E5FBF7;
-}
 /* ANIM */
 
 #mySelf{
@@ -478,7 +473,7 @@ transform: translate(-50%, -50%);
 }
 #Email::after{
   position: absolute;
-      top: 65%;
+  top: 65%;
   left: 15px;
   width:90%;
   content: "";
@@ -488,4 +483,67 @@ transform: translate(-50%, -50%);
   height:0;
   z-index: -2;
   opacity:.7;
+}
+/* PROJECT VIEW*/
+.exp{
+  position: relative;
+  float: left;
+  margin-top:2%;
+  width: 100%;
+}
+.expPic:nth-child(2n){
+  clear:left
+}
+.expPic {
+  position:relative;
+  display: block;
+  float: left;
+  width: 60%;
+}
+.expTitle{
+  opacity: 0.7;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 15%;
+  margin: 0;
+  font-family: gothambold;
+  font-size: 1000%;
+  color: rgba(80, 255, 174, 1.0 );
+  z-index: 2;
+}
+
+.expGallery{
+  position:relative;
+  display:block;
+  margin-top: 20px;
+  width: 100%;
+}
+.expTitleView {
+  position: relative;
+  display: inline-block;
+  font-size: 3em;
+  margin-top: 13px;
+  margin-bottom: 20px;
+  font-family: gothambold;
+}
+.expTitleView::after{
+    position: absolute;
+    top: 70%;
+    left: 15px;
+    width:90%;
+    content: "";
+    height:0.5em;
+    border:rgba(80, 255, 174, 1) solid 5px;
+    background-color:rgba(80, 255, 174, 1) ;
+    height:0;
+    z-index: -2;
+    opacity:.9;
+}
+.expContentView{
+  letter-spacing: 1.5px;
+}
+.expPrev{
+  overflow-y: hidden;
+  max-height: 350px;
 }

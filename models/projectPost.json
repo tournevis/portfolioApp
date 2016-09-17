@@ -1,3 +1,18 @@
+/* BABYFOOT */
+{
+    "name" : "tournevis",
+    "password" : "azerty",
+    "imgPath" :["/images/babyfoot/babyfootNB.jpg","/images/babyfoot/babyfoot0.jpg","/images/babyfoot/babyfoot1.jpg","/images/babyfoot/babyfoot2.jpg" ],
+    "title": "Babyfoot",
+    "content" : "Babyfoot connecté réalisé pour Twitter dans le cadre de l'Euro de football 2016. Le babyfoot s'éclaire lorsqu'un but est marqué, il est aussi accompagné d'un application Ipad qui permet d'afficher les scores et animations de but. Les joueurs peuvent s'inscrire avec leur compte twitter , tout les actions du match sont twitté en temps réel.",
+    "url": "/babyfoot",
+    "color" : "#BADA55",
+    "projectId" : "4",
+    "videoUrl" :  "",
+    "links" : [""],
+    "class" : " install"
+}
+
 /* transparency */
 {
     "name" : "tournevis",

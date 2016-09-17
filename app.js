@@ -90,14 +90,17 @@ app.post('/experiment',function(req,res){
     if(req.body.password == user.password ){
       var yeah = new Exp({
         title: req.body.title,
+        id: req.body.id,
         content: req.body.content,
         projectId: req.body.projectId,
         color :req.body.color,
         url: req.body.url,
+        links: req.body.links,
         imgPath: req.body.imgPath,
         class : req.body.class,
-        jsPath: String,
-        cssPath: String
+        jsPath: req.body.jsPath,
+        cssPath: req.body.cssPath
+        /**/
       });
       yeah.save(function(err){
         if (err) throw err;
